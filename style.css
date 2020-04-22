@@ -1,0 +1,10 @@
+.title {
+  font-family: sans-serif;
+}
+.map path {
+  fill: #ddd;
+  stroke: #aaa;
+}
+.label {
+  font-family: sans-serif;
+}

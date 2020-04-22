@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Raleigh, NC, urbanized area 1990-2012</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="content">
+
+      <h1 class="title">Raleigh, NC urbanized area</h1>
+
+      <svg class="vintage-1990" width="400px" height="400px">
+        <rect width="400" height="400" fill="none" stroke="black"/>
+        <text class="label year" x="10" y="370"></text>
+        <text class="label area" x="10" y="390"></text>
+        <g class="map"/>
+      </svg>
+
+      <svg class="vintage-2000" width="400px" height="400px">
+        <rect width="400" height="400" fill="none" stroke="black"/>
+        <text class="label year" x="10" y="370"></text>
+        <text class="label area" x="10" y="390"></text>
+        <g class="map"/>
+      </svg>
+
+      <svg class="vintage-2012" width="400px" height="400px">
+        <rect width="400" height="400" fill="none" stroke="black"/>
+        <text class="label year" x="10" y="370"></text>
+        <text class="label area" x="10" y="390"></text>
+        <g class="map"/>
+      </svg>
+    </div>
+
+    <!-- d3 visualization libraries -->
+    <script src="https://d3js.org/d3-selection.v1.min.js"></script>
+    <script src="https://d3js.org/d3-array.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+
+    <!-- geojson data -->
+    <script src="geojson-nc/1990/urban-area.js"></script>
+    <script src="geojson-nc/2000/urban-area.js"></script>
+    <script src="geojson-nc/2012/urban-area.js"></script>
+
+    <!-- our script -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
